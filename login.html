@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title> login </title>
+    <link rel=" stylesheet " href="style.css" />
+</head>
+
+<body>
+    <div class="container-login">
+
+        <!-- NAVIBATION BAR -->
+        <div class="navbar">
+            <ul class="ul_navbar">
+                <li class="li-navbar">
+                    <a href="#" class="a-navbar">HOME</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="about.html" class="a-navbar">ABOUT ME</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="contact.html" class="a-navbar">CONTACT ME </a>
+                </li>
+                <li class="li-navbar">
+                    <a href="projects.html" class="a-navbar">PROJECT</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="skills.html" class="a-navbar">SKILLS</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="login.html" class="a-navbar">LOGIN</a>
+                <li class="li-navbar">
+                    <a href="search.html" class="a-navbar">SEARCH</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- NAVIBATION BAR SELESAI -->
+
+        <!-- CONTEN LOGIN  -->
+
+        <h1 style="text-align:center;">Login </h1>
+        <p style="text-align:center;">Silahkan login disini</p>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/loginform.html" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="public/assets/img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <button type="submit">Login</button>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+
+                <div class="container-content">
+                    <a href="" class="a-content">
+                        <p> LOGIN</p>
+                        <img src="public/assets/img_avatar2.png" class="img-content" />
+                    </a>
+            </form>
+        </div>
+    </div>
+    <!-- CONTEN LOGIN FORM END -->
+    <div class="container-content">
+        <a href="login.html" class="a-content">
+            <p> Login</p>
+            <img src="public/assets/classroom.png" class="img-content" />
+        </a>
+
+    </div>
+
+    <!-- FOOTER-->
+    <div class="container-footer">
+        <h1 class="h1-footer">Halaman Login</h1>
+
+
+    </div>
+    <!-- FOOTER END -->
+    </div>
+</body>
+
+</html>
